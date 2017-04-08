@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOfRadioBtn">#c0c0c0</color>
+    <color name="colorOfSex">#8e8e8e</color>
+    <color name="hasService">#d0d0d0</color>
+    <color name="hot">#ffe384</color>
+    <color name="ticket">#7fffd4</color>
+    <color name="newshop">#b0e0e6</color>
+    <color name="charge">#f5deb3</color>
+    <color name="category_item_title">#7c7c7c</color>
+    <color name="category_item_description">#cccccc</color>
+    <color name="category_item_hours">#ff7871</color>
+    <color name="category_item_radio_btn">#e63020</color>
+    <color name="white">#ffffff</color>
+    <color name="AccountTextColor">#ff0000</color>
+    <color name="PressAccountTextColor">#000000</color>
+    <color name="login_type">#7f7f7f</color>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_banner_one"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.daowei.www.daoweitwo.view.home.HomeBannerActivityOne">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#fff"
+        android:id="@+id/banner_item_toolbar"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableStart="@drawable/btn_left_back_2"
+            android:onClick="bannerEnd"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/banner_title"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="活动详情"
+            android:layout_gravity = "center"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="关闭"
+            android:onClick="text_finish"
+            android:textSize="15sp"
+            android:textColor="#ff00"
+            android:layout_gravity ="right"
+            android:layout_marginEnd="10dp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c0c0c0"
+        />
+    <im.delight.android.webview.AdvancedWebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/home_webview"
+        />
+</LinearLayout>

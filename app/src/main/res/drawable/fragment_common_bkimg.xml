@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size android:width="40dp"
+        android:height="12dp"/>
+
+    <corners
+        android:topRightRadius="2dp"
+        android:topLeftRadius="2dp"/>
+    <solid android:color="@color/category_item_hours"/>
+    <stroke android:color="@color/category_item_hours"
+        android:width="0.5dp"/>
+</shape>

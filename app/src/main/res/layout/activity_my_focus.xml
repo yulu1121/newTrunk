@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.myself.middleactivity.myfocus.MyFocusActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/text_mywallet_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的关注"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/back_to_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_left_back_2"
+            android:onClick="myFocusBack" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0" />
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/focus_xtablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:xTabDisplayNum="2"
+        app:xTabSelectedTextColor="#ff0000"
+        app:xTabIndicatorHeight="1dp"
+        app:xTabIndicatorWidth="110dp"
+        app:xTabIndicatorColor="#ff0000"
+        app:xTabMode="scrollable"></com.androidkun.xtablayout.XTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/focus_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

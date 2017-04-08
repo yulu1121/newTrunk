@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.daowei.www.daoweitwo.view.myself.bottomactivity.myincome.IncomeAccount">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现账户"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/title_car_view"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:onClick="btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_left_back_2"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView
+        android:background="#c0c0c0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

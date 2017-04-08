@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daowei.www.daoweitwo.view.home.EditCityActivity">
+   <android.support.v7.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="?actionBarSize"
+       android:id="@+id/edit_toolbar"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           >
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="36dp"
+               android:layout_weight="5"
+               android:layout_gravity="start|center_vertical"
+               android:background="@drawable/search_back"
+               android:hint="搜索小区"
+               android:drawableStart="@drawable/btn_search_2"
+               android:id="@+id/edit_city_real"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="取消"
+               android:layout_weight="1"
+               android:onClick="end_edit"
+               android:gravity="center_vertical|end"
+
+               android:textColor="#ff00"
+               android:layout_marginEnd="10dp"
+               />
+
+       </LinearLayout>
+   </android.support.v7.widget.Toolbar>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_edit_list"
+        android:layout_below="@id/edit_toolbar"
+        />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daowei.www.daoweitwo.view.home.MapActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/map_toolbar"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableEnd="@drawable/arraw_down"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:id="@+id/city"
+                android:paddingEnd="5dp"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:hint="搜索小区"
+                android:gravity="start|center_vertical"
+                android:layout_weight="4"
+                android:id="@+id/search_city"
+                android:background="@drawable/search_back"
+                android:drawableStart="@drawable/home_img_search_gray"
+                android:layout_gravity = "center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:textSize="18sp"
+                android:onClick="end_map"
+                android:layout_weight="1"
+                android:textColor="#ff00"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity = "end"
+                />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <com.baidu.mapapi.map.MapView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/map_toolbar"
+        android:id="@+id/baidu_map"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#dcdcdc"
+        android:id="@+id/map_divider"
+        android:gravity="center_vertical"
+        android:text="附近地点"
+        android:layout_below="@id/baidu_map"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_list"
+        android:layout_below="@id/map_divider"
+        />
+</RelativeLayout>

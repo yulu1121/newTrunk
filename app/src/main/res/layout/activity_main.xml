@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daowei.www.daoweitwo.MainActivity">
+    <FrameLayout
+    android:orientation="vertical"
+    android:id="@+id/main_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    </FrameLayout>
+    <View
+        android:id="@+id/main_line"
+        android:layout_width="match_parent"
+        android:background="#c0c0c0"
+        android:layout_above="@+id/main_rg"
+        android:layout_height="0.5dp"/>
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@id/main_rg"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:id="@+id/main_home_button"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_weight="1"
+            android:text="首页"
+            android:textColor="#c0c0c0"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/main_activity_home_selector"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/main_category_button"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:textColor="#c0c0c0"
+            android:text="分类"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_activity_category_selector"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/main_indent_button"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:text="订单"
+            android:textColor="#c0c0c0"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_activity_indent_selector"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/main_mysekf_button"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:text="我的"
+            android:textColor="#c0c0c0"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_activity_myself_selector"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</RelativeLayout>

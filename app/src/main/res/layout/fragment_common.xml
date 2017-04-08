@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/fragment_common_rg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <CheckBox
+            android:id="@+id/fragment_common_btn1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:paddingRight="5dp"
+            android:text="服务商"
+            android:drawableRight="@drawable/img_category_gray_arrow"
+            android:background="@drawable/fragment_common_order"
+            android:layout_height="30dp" />
+        <CheckBox
+            android:id="@+id/fragment_common_btn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="携带设备"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:drawableRight="@drawable/img_category_gray_arrow"
+            android:background="@drawable/fragment_common_order"
+            android:layout_height="30dp" />
+        <CheckBox
+            android:id="@+id/fragment_common_btn3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text="服务频次"
+            android:drawableEnd="@drawable/img_category_gray_arrow"
+            android:background="@drawable/fragment_common_order"
+            android:layout_height="30dp" />
+        <CheckBox
+            android:id="@+id/fragment_common_btn4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="排序"
+            android:paddingRight="5dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/img_category_gray_arrow"
+            android:background="@drawable/fragment_common_order"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_common_relative"
+        android:layout_width="match_parent"
+        android:layout_below="@id/fragment_common_rg"
+        android:layout_height="match_parent">
+    <View
+        android:id="@+id/fragment_common_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c0c0c0"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/fragment_common_lv"
+        android:layout_width="match_parent"
+        android:divider="#f2f3f4"
+        android:dividerHeight="5dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_common_line1"
+        >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </RelativeLayout>
+</RelativeLayout>

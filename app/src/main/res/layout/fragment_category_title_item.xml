@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp">
+    <View
+        android:id="@+id/fragment_category_title_view"
+        android:layout_width="5dp"
+        android:layout_height="80dp" />
+    <LinearLayout
+        android:id="@+id/fragment_category_title_item_ll"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/fragment_category_title_item_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/jiazhen"
+        android:scaleType="centerCrop"/>
+     <TextView
+         android:id="@+id/fragment_category_title_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+         android:text="家庭保洁"/>
+    </LinearLayout>
+</RelativeLayout>

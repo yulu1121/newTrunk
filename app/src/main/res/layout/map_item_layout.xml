@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/img_location_s"
+       android:layout_margin="10dp"
+       android:scaleType="centerCrop"
+       android:layout_centerVertical="true"
+       android:id="@+id/map_image"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/map_image"
+        android:id="@+id/local_address"
+        android:gravity="center_vertical|start"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.daowei.www.daoweitwo.view.myself.headactivity.SetPassWordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/text_mywallet_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设置密码"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/back_to_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_left_back_2"
+            android:onClick="myFocusBack" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#c0c0c0" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入新密码"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:id="@+id/new_password"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_below="@id/new_password"
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:hint="请确认新密码"
+            android:background="@null"
+            android:id="@+id/again_paddword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/new_password"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/text_line"
+            android:layout_below="@id/again_paddword"
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+       <Button
+           android:id="@+id/btn_sure"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:background="#ff0000"
+           android:textColor="#ffffff"
+           android:layout_below="@id/text_line"
+           android:text="确定"
+           android:textSize="20sp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp" />
+    </RelativeLayout>
+
+</LinearLayout>

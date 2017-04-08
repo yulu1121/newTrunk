@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.myself.middleactivity.mywallet.MyWalletActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的钱包"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/text_mywallet_data"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:id="@+id/back_to_left"
+            android:onClick="myWalletBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_left_back_2"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/wallet_details"
+            android:text="钱包明细"
+            android:textSize="17sp"
+            android:textColor="#e63020"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+    
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="余额"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:id="@+id/textView5"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#e94839"
+                    android:textSize="30sp"
+                    android:id="@+id/textView6"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignTop="@+id/textView5"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:text="元"
+                    android:textColor="#e94839"
+                    android:layout_marginTop="66dp"
+                    android:layout_toRightOf="@id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:background="#f2f3f4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <EditText
+                android:id="@+id/edit_text"
+                android:numeric="decimal"
+                android:singleLine="true"
+                android:background="@drawable/edit_bg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="手动输入充值金额"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_bg"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_bg"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_bg"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_bg"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f2f3f4"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:id="@+id/wx"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_pay_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@id/wx"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="微信支付"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="10sp"
+                    android:layout_marginTop="27dp"
+                    android:text="推荐微信用户使用"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:onClick="onClick"
+                    android:id="@+id/img_wx"
+                    android:src="@drawable/my_wallet_wx_selector"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        <TextView
+            android:background="#f2f3f4"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:id="@+id/zfb"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_pay_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@id/zfb"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付宝支付"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="10sp"
+                    android:layout_marginTop="27dp"
+                    android:text="推荐支付宝用户使用"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/zfb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:onClick="onClick"
+                    android:id="@+id/img_zfb"
+                    android:src="@drawable/my_wallet_wx_selector"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        <TextView
+            android:background="#f2f3f4"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:id="@+id/ywt"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_pay_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@id/ywt"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="一网通支付"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="10sp"
+                    android:layout_marginTop="27dp"
+                    android:text="推荐一网通用户使用"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ywt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:onClick="onClick"
+                    android:id="@+id/img_ywt"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/my_wallet_wx_selector"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        <TextView
+            android:background="#f2f3f4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+        <TextView
+            android:textSize="10sp"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            android:text="点击立即充值，即表示你已同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/cz_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#ff0000"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="立即充值"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    
+
+
+
+
+
+</RelativeLayout>

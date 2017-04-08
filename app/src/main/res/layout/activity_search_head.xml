@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务热搜"
+        android:padding="10dp"
+        android:textColor="@color/category_item_description"
+        android:textSize="15sp"/>
+    <com.daowei.www.daoweitwo.view.category.MyGridView
+        android:id="@+id/activity_search_gridview"
+        android:layout_width="match_parent"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:numColumns="4"/>
+    <View
+        android:id="@+id/activity_search_line"
+        android:layout_width="match_parent"
+        android:background="#c0c0c0"
+        android:layout_height="0.5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#f2f3f4"/>
+
+</LinearLayout>
